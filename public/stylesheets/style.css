@@ -97,3 +97,7 @@
         .cmt .window-manager-container {
             padding: 0 !important;
         }
+
+        .cmt .window-manager-container .window {
+            margin: 0 !important;
+        }

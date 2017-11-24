@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  #streetsmartApi
+  script(type='text/javascript').
+    var ROTATE_DEGREES = 15;
+    var DEFAULT_YAW = 0;
+    var DEFAULT_PITCH = 0;
+    var DEFAULT_HFOV = 110;
+
+    var $ = document.querySelector.bind(document);
+
+    function onEnter(event) {
+        if (event.keyCode === 13) {
+            initApi();
+        }
+    }
+
+    window.onload = function() {
+        initApi();
+    };
+
+    function openByQuery() {
+        var query = '#{query}';
+        var viewerTypeValue = 'both';
+        var srs = 'EPSG:26918';
+        var closable = false;
+        var maximizable = true;
+
+        var viewerType = [];
+        if (viewerTypeValue === 'both') {
+            viewerType.push(StreetSmartApi.ViewerType.PANORAMA, StreetSmartApi.ViewerType.OBLIQUE);
+        } else if (viewerTypeValue === 'panorama' ) {
+            viewerType.push(StreetSmartApi.ViewerType.PANORAMA);
+        } else if (viewerTypeValue === 'oblique' ) {
+            viewerType.push(StreetSmartApi.ViewerType.OBLIQUE);
+        }
+
+        StreetSmartApi.open(query, {
+            viewerType: viewerType,
+            srs: srs,
+            closable: closable,
+            maximizable: maximizable
+        })
+        .catch(
+            function(reason) {
+                console.log('Failed to create component(s) through API: ' + reason);
+            }
+        )
+    }
+
+    function initApi() {
+        var username = '#{USERNAME}';
+        var password = '#{PASS}';
+        var apikey = '#{APIKEY}';
+        var initSrs = 'EPSG:26918';
+
+        if (!!username && !!password) {
+            StreetSmartApi.init({
+                targetElement: $('#streetsmartApi'),
+                username: username,
+                password: password,
+                apiKey: apikey,
+                srs: initSrs,
+                locale: 'en-us',
+                //configurationUrl: ''
+                addressSettings: {
+                    locale: 'us',
+                    database: 'Nokia'
+                }
+            }).then(
+                function() {
+                    console.log('Api: init: success!');
+                    openByQuery();
+                },
+                function(err) {
+                    console.log('Api: init: failed. Error: ', err);
+                }
+            );
+        } else {
+            console.log('Api: init: failed. Error: No username or password provided!');
+        }
+    }

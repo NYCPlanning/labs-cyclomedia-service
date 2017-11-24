@@ -1,0 +1,92 @@
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 10px;
+            height: 100%;
+        }
+
+        #streetsmartApiInterface *[disabled] {
+            opacity: 0.5;
+        }
+
+        @media (min-width: 1400px) {
+            #streetsmartApiInterface.container {
+                width: 1370px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            #streetsmartApiInterface.container {
+                width: 1570px;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            #streetsmartApiInterface.container {
+                width: 1890px;
+            }
+        }
+
+        #streetsmartApiInterface vspace {
+            display: block;
+            height: 8px;
+        }
+
+        #streetsmartApiInterface .orientation input {
+            width: 30px;
+        }
+
+        #streetsmartApiInterface #rotationTable button {
+            width: 30px;
+        }
+
+        #streetsmartApiInterface .field-row {
+            width: 100%;
+        }
+        #streetsmartApiInterface .field-row > * {
+            display: inline-block;
+            float: none;
+        }
+
+        #streetsmartApiInterface label {
+            width: 75px;
+            text-align: left;
+        }
+
+        #streetsmartApiInterface.container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #streetsmartApiInterface .container-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #streetsmartApiInterface .container-item {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            padding: 3px;
+        }
+
+        #streetsmartApiInterface .space-between {
+            justify-content: space-between;
+        }
+
+        #streetsmartApiInterface .flex-direction-column {
+            flex-direction: column;
+        }
+
+        #streetsmartApiInterface .container-item fieldset {
+            width: 100%;
+        }
+
+        #streetsmartApi {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background: #333;
+        }

@@ -101,3 +101,7 @@
         .cmt .window-manager-container .window {
             margin: 0 !important;
         }
+
+.expandable-navbar {
+  display: none !important;
+}

@@ -60,3 +60,6 @@ App can be deployed through `git` pushing it to a Dokku app.
 ## Contact us
 
 You can find us on Twitter at [@nycplanninglabs](https://twitter.com/nycplanninglabs), or comment on issues and we'll follow up as soon as we can. If you'd like to send an email, use [labs_dl@planning.nyc.gov](mailto:labs_dl@planning.nyc.gov)
+
+## Credits
+Special thanks to [Andy Rothwell](https://github.com/ajrothwell) at the [City of Philadelphia](https://github.com/CityOfPhiladelphia) for providing advice on their approach to using this API publicly.

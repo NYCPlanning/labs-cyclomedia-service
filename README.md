@@ -1,7 +1,7 @@
 # labs-cyclomedia-service
 A simple web service that shows a fullscreen cyclomedia viewer for a given set of coordinates. This requires access to you or your organization's [Cyclomedia](https://www.cyclomedia.com) API credentials (including username, password, and API key). 
 
-![120broadway](https://user-images.githubusercontent.com/5004319/34015995-466eabc8-e0ee-11e7-8a71-4ac93770278d.png)
+![120broadway](https://user-images.githubusercontent.com/5004319/34017639-82ea6ab4-e0f4-11e7-8f83-0a85aa4df3f6.png)
 
 ## How we work
 

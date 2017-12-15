@@ -5,9 +5,7 @@ A simple web service that shows a fullscreen cyclomedia viewer for a given set o
 
 ## How we work
 
-[NYC Planning Labs](https://planninglabs.nyc) takes on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks.  We conduct regular maintenance between larger projects.  
-
-Take a look at our sprint planning board {link to waffle} to get an idea of our current priorities for this project.
+[NYC Planning Labs](https://planninglabs.nyc) takes on a single project at a time, working closely with our customers from concept to delivery in a matter of weeks.  We conduct regular maintenance between larger projects. 
 
 ## How you can help
 

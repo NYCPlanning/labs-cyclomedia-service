@@ -18,12 +18,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 
-var corsOptions = {
-    origin: 'https://atlasapi.cyclomedia.com',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
-
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

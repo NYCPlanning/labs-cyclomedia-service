@@ -20,6 +20,7 @@ app.set('view engine', 'jade');
 
 var corsOptions = {
     origin: 'https://roadview.planninglabs.nyc',
+    credentials: true,
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 

@@ -19,7 +19,7 @@ app.set('view engine', 'jade');
 // uncomment after placing your favicon in /public
 
 var corsOptions = {
-    origin: 'https://roadview.planninglabs.nyc',
+    origin: '*',
     credentials: true,
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }

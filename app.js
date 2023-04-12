@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors')
 const path = require('path');
 
 const logger = require('morgan');
